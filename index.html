@@ -74,6 +74,10 @@
             color: #264653;
             font-size: 20px;
         }
+        nav  img{
+            border-radius: 20%;
+
+        }
         .intro img {
             border-radius: 50%;
             width: 200px;
@@ -144,11 +148,15 @@
             justify-content: center;
             text-align: center;
             color: black;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
         }
         .project-box:hover {
-            transform: scale(1.06);
+            transform: scale(1.6);
             box-shadow: 0 4px 10px rgba(255, 255, 255, 0.425);
             z-index: 1;
+            
         }
         /* Skills section */
         .skills {
@@ -179,13 +187,13 @@
         }
         
         #contact {
-            background-color: #2a9d8f; /* Adjusted background color */
+            background-color: #e9c56ac9;
             padding: 50px;
         }
         #contact h2 {
             text-align: center;
             margin-bottom: 30px;
-            color: #e9c46a; /* Adjusted headline color */
+            color: #2a9d8f; /* Adjusted headline color */
             font-size: xx-large;
             border-bottom: 2px solid;
 
@@ -215,7 +223,7 @@
             display: block;
             margin-bottom: 5px;
             font-size: large;
-            color: #e9c46a;
+            color: #fefae0;
         }
         input[type="text"],
         input[type="email"],
@@ -257,11 +265,6 @@
             transition: opacity 0.5s ease, transform 0.5s ease;
         }
 
-        .project-box {
-            opacity: 0;
-            transform: translateY(50px);
-            transition: opacity 0.5s ease, transform 0.5s ease;
-        }
         .progress-animate {
             width: 0; /* Initial width set to 0 */
             transition: width 3s ease; /* Slower transition for filling */
@@ -272,6 +275,9 @@
 
 <nav>
     <ul>
+        <li>
+            <img class="logo" src="https://via.placeholder.com/150" alt="Profile Picture">
+        </li>
         <li><a href="#home">Home</a></li>
         <li><a href="#about-me">About Me</a></li>
         <li><a href="#projects">Projects</a></li>
