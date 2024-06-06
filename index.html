@@ -266,8 +266,8 @@
         }
 
         .progress-animate {
-            width: 0; /* Initial width set to 0 */
-            transition: width 3s ease; /* Slower transition for filling */
+            width: 0; 
+            transition: width 3s ease; 
         }
     </style>
 </head>
@@ -283,7 +283,6 @@
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
-        <!-- Add more navigation items here -->
     </ul>
 </nav>
 
@@ -298,7 +297,6 @@
                 <a href="#"><i class="fab fa-twitter"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
                 <a href="#"><i class="fab fa-github"></i></a>
-                <!-- Add more social media icons here -->
             </div>
         </div>
     </section>
@@ -395,7 +393,7 @@
 </footer>
 
 <script>
-    // Function to check if an element is in the viewport
+
     function isInViewport(element) {
         const rect = element.getBoundingClientRect();
         return (
@@ -406,7 +404,7 @@
         );
     }
 
-    // Function to animate elements when they are in the viewport
+
     function animateElements() {
         const animatedElements = document.querySelectorAll('.animate-left');
         animatedElements.forEach(element => {
@@ -422,18 +420,18 @@
                 setTimeout(() => {
                     box.style.opacity = 1;
                     box.style.transform = 'translateY(0)';
-                }, index * 200); // Delay each project box animation
+                }, index * 200); 
             }
         });
     }
 
-    // Initial animation check on page load
+
     animateElements();
 
-    // Event listener for scrolling
+
     window.addEventListener('scroll', animateElements);
 
-    // Function to animate the progress bars when they are in the viewport
+
     function animateProgressBars() {
         const progressBars = document.querySelectorAll('.progress-animate');
         progressBars.forEach(bar => {
@@ -445,10 +443,10 @@
         });
     }
 
-    // Initial animation check on page load
+
     animateProgressBars();
 
-    // Event listener for scrolling
+
     window.addEventListener('scroll', animateProgressBars);
 </script>
 </body>
